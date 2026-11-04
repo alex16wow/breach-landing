@@ -50,47 +50,7 @@
 .cinematic-scroll .hero-stage{padding-bottom:1000px}
 .cinematic-scroll .world{margin-top:calc(-9vw - 500px)}
 .rift-glow{position:absolute;inset:0;z-index:-1;opacity:0;pointer-events:none;background:radial-gradient(ellipse at 50% 43%,rgba(240,32,37,.65),transparent 65%)}
-/* Mobile art direction, matched to the 393px reference. Desktop stays intact. */
-@media(max-width:650px){
-  .world{padding-top:160px}
-  .dark-chapter{padding-top:350px;padding-bottom:145px}
-  .division-grid{gap:24px}
-  .divisions h2,.artifacts h2,.operations h2{font-size:clamp(30px,9.65vw,42px)}
-  .division-card{height:285px;min-height:0}
-  .division-card .character{scale:1;translate:0 0;object-fit:contain;object-position:center bottom;transform-origin:center bottom}
-  .char-1 .character{width:104%;height:115%;right:-15%;bottom:-8%}
-  .char-3 .character{width:145%;height:120%;right:-2%;bottom:-3%}
-  .char-2 .character{width:115%;height:115%;right:-5%;bottom:-12%}
-  .char-4 .character{width:150%;height:120%;right:0;bottom:-1%}
-  .artifacts{padding-top:34px}
-  .artifact-grid{gap:24px 12px;padding-bottom:0}
-  .artifact-card{height:410px;overflow:hidden;contain:paint}
-  .artifact-card:nth-child(2){margin-top:65px}
-  .artifact-card:nth-child(3){margin-top:-35px}
-  .artifact-card:nth-child(4){margin-top:30px}
-  .artifact-card .artifact-scroll-layer{overflow:hidden}
-  .artifact-card .item{scale:1;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
-  .artifact-card .icon{display:none}
-  .artifact-card::before{opacity:1;background:linear-gradient(to top,#020507 0%,#020507f5 15%,#020507d9 26%,#02050766 40%,transparent 58%)}
-  .artifact-card::after{background:linear-gradient(to top,#020507a6,transparent 50%)}
-  .artifact-card .card-copy{left:10%;right:9%;bottom:8%}
-  .artifact-card h3{font-size:clamp(19px,5.8vw,24px);line-height:1.02;letter-spacing:-.025em;text-shadow:0 2px 8px #000}
-  .artifact-card:not(.expanded):not(:focus-visible) .details,.division-card:not(.expanded):not(:focus-visible) .details{max-height:0;opacity:0;margin-top:0}
-  .artifact-card .card-copy>p:not(.artifact-label){font-size:13px;line-height:1.25;margin-top:5px}
-  .artifact-card .artifact-label{margin-top:16px!important;padding-top:10px;font-size:9px!important;line-height:1.5;letter-spacing:1.6px!important}
-  .artifact-actions{margin-top:34px}
-  .operations{margin-top:-85px;padding-top:145px;padding-bottom:145px;background:none;isolation:isolate}
-  .operations::before{content:'';position:absolute;z-index:-1;inset:0 0 auto;height:140px;pointer-events:none;background:url('assets/block-4-bg-v2.webp') center top/100% auto no-repeat;mask-image:linear-gradient(#000 75%,transparent)}
-  .operations::after{content:'';position:absolute;z-index:-2;inset:100px 0 0;pointer-events:none;background:#f0f0ec url('assets/block-4-bg-v2.webp') center bottom/100% auto no-repeat}
-  .operations>.wrap{top:0}
-  .join{margin-top:-90px;padding-top:370px;background-position:54% top}
-  .join .section-head{margin-bottom:28px}
-  .join h2{font-size:clamp(36px,10.2vw,44px)}
-  .join h2 em{display:block}
-  .join .section-head::before{inset:-28px -4% 45px;background:radial-gradient(ellipse,#03070ae6,#03070a99 52%,transparent 78%);filter:blur(12px)}
-}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;translate:none}*{transition:none!important}}
-
 
 
 
